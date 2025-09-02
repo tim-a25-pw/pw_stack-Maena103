@@ -1,25 +1,22 @@
-
-
-
 /* ==========================================================================
    header / component
    ========================================================================== */
 
-.header{
+.header {
     --header-height: 100px;
 
-    .wrapper{
+    .wrapper {
         align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: var(--spacing-sm) 0;
+        display: flex;
+        justify-content: space-between;
+        padding: var(--spacing-sm) 0;
     }
-    
+
     position: sticky;
     top: 0;
     z-index: 10;
     height: var(--header-height);
-    transition: transform .4s $ease-out-expo;
+    transition: transform 0.4s $ease-out-expo;
     background-color: var(--color-white);
 
     &::before {
@@ -37,9 +34,8 @@
         padding: 0 var(--spacing-lg);
     }
 
-    .header-is-hidden.is-scrolling-down:not(.nav-is-active) &{
+    .header-is-hidden.is-scrolling-down:not(.nav-is-active) & {
         transform: translateY(-100%) translateY(4px);
-        
     }
 }
 
@@ -51,9 +47,8 @@
     align-items: center;
     color: #444;
 
-    .icon{
+    .icon {
         color: var(--color-primary);
-
     }
 }
 
@@ -147,7 +142,6 @@
         padding: 0;
         margin: 0;
 
-
         a {
             display: block;
             text-align: center;
@@ -155,13 +149,11 @@
             font-weight: 700;
             color: #18191f;
             font-size: 14px;
-
         }
 
         a:hover {
             text-decoration: underline;
             text-transform: uppercase;
-
         }
     }
 
@@ -193,7 +185,6 @@
     }
 
     @media screen and (min-width: $breakpoint-md) {
-        
         position: relative;
         text-transform: none;
 
