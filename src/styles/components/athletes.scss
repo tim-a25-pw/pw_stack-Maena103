@@ -1,0 +1,34 @@
+.nos_athletes{
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 50px;
+        padding: 125px 0;
+
+        p{
+            max-width: 730px;
+            text-align: end;
+        }
+
+        .cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .card{
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+
+            .card_content{
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                justify-content: space-between;
+                padding: 24px;
+            }
+        }
+    }
+}

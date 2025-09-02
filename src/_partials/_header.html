@@ -3,11 +3,43 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PENSE À ME CHANGER :)</title>
+        <title>Tim québec</title>
 
         <link rel="stylesheet" href="styles/main.css" />
-
         <script src="scripts/main.js" defer></script>
+        <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
     </head>
 
-    <body>
+    <body data-component="Scrolly">
+        <header class="header" data-component="Header">
+            <div class="wrapper">
+            <a href="index.html" class="header__brand">
+                <svg class="icon icon--md">
+                    <use xlink:href="#icon-logo"></use>
+                </svg>
+                <h3>tim québec</h3>
+            </a>
+            <nav class="nav-primary">
+                <ul>
+                    <li>
+                        <a href="#" class="nav-primary__item ">Athlètes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-primary__item " >Disciplines</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-primary__item ">Programmes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-primary__item ">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        </header>
